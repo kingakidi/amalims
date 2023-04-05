@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amalims</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="wrapper h-screen">
+      <section class="section-1">
+        <nav class="flex bg-white text-white text-lg shadow-md">
+          <div
+            class="nav-section-1 bg-white text-red-500 w-28 p-2 flex justify-center items-center"
+          >
+            AIL
+          </div>
+
+          <div class="nav-section-2 grow">
+            <div class="flex">
+              <div class="nav-section-content-1" id="triangle-topright"></div>
+
+              <div
+                class="bg-gray-700 text-white p-2 grow flex justify-center items-center"
+              >
+                <a href="mailto:support@amalims.com">support@amalims.com</a>
+
+                <span class="mr-3">Mon - Fri 9:000AM - 4PM</span>
+                <span class="mr-3">Niger, Kogi, Nigeria</span>
+                <span class="mr-3">Online Chart</span>
+              </div>
+            </div>
+            <div
+              class="nav-section-content-2 bg-white p-2 text-gray-700 flex justify-center items-center"
+            >
+              <a href="#" class="mr-2">Home</a>
+              <a href="#" class="mr-2">Product</a>
+              <a href="#" class="mr-2">Our Service</a>
+              <a href="#" class="mr-2">About Us</a>
+              <a href="#" class="mr-2">Contact Us</a>
+              <a href="#" class="mr-2">Our Store</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="section-content">
+          <h1>Amalims Integrated Limited</h1>
+          <form action="" class="search-form" id="search-form">
+            <div class="form-group">
+              <label for="select-name">Select make</label>
+              <select name="select-make" id="select-make">
+                <option value="all">All Make</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="">Select a model</label>
+              <select name="model" id="">
+                <option value="">Select a Model</option>
+                <option value="toyota">Toyota</option>
+                <option value="">Yamaha</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="">Fuel Type </label>
+              <select name="" id="">
+                <option value="">All fuel type</option>
+
+                <option value="diesel">Diesel</option>
+                <option value="petrol">Petrol</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

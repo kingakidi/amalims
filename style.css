@@ -1,0 +1,10 @@
+#triangle-topright {
+  width: 0;
+  height: 0;
+  border-top: 60px solid #374151;
+  border-left: 60px solid transparent;
+}
+
+/* nav {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+} */
