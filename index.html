@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="wrapper h-screen">
-      <section class="section-1">
+      <section class="section-1 h-screen relative flex flex-col">
         <nav class="flex bg-white text-white text-lg shadow-md">
           <div
             class="nav-section-1 bg-white text-red-500 w-28 p-2 flex justify-center items-center"
@@ -23,7 +23,7 @@
               <div class="nav-section-content-1" id="triangle-topright"></div>
 
               <div
-                class="bg-gray-700 text-white p-2 grow flex justify-center items-center"
+                class="bg-gray-700 text-white p-2 grow flex justify-center items-center flex-wrap"
               >
                 <a href="mailto:support@amalims.com">support@amalims.com</a>
 
@@ -33,9 +33,9 @@
               </div>
             </div>
             <div
-              class="nav-section-content-2 bg-white p-2 text-gray-700 flex justify-center items-center"
+              class="nav-section-content-2 bg-white p-2 text-gray-700 flex justify-center items-center flex-wrap"
             >
-              <a href="#" class="mr-2">Home</a>
+              <a href="#" class="mr-2 text-red-500">Home</a>
               <a href="#" class="mr-2">Product</a>
               <a href="#" class="mr-2">Our Service</a>
               <a href="#" class="mr-2">About Us</a>
@@ -45,37 +45,118 @@
           </div>
         </nav>
 
-        <div class="section-content">
-          <h1>Amalims Integrated Limited</h1>
-          <form action="" class="search-form" id="search-form">
-            <div class="form-group">
-              <label for="select-name">Select make</label>
-              <select name="select-make" id="select-make">
-                <option value="all">All Make</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="">Select a model</label>
-              <select name="model" id="">
-                <option value="">Select a Model</option>
-                <option value="toyota">Toyota</option>
-                <option value="">Yamaha</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="">Fuel Type </label>
-              <select name="" id="">
-                <option value="">All fuel type</option>
-
-                <option value="diesel">Diesel</option>
-                <option value="petrol">Petrol</option>
-              </select>
-            </div>
-          </form>
+        <div class="section-content relative">
+          <h1 class="text-6xl text-red-500 m-2 w-1/2 ml-12">
+            Amalims Integrated Limited
+          </h1>
         </div>
+
+        <!-- form  -->
+        <form
+          action=""
+          class="search-form shadow-xl absolute bottom-0 p-3 rounded self-center flex flex-wrap"
+        >
+          <div class="form-group flex flex-col">
+            <label for="select-name">Select make</label>
+            <select
+              name="select-make"
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="select-make"
+            >
+              <option value="all">All Make</option>
+            </select>
+          </div>
+
+          <div class="form-group flex flex-col">
+            <label for="">Select a model</label>
+            <select
+              name="model"
+              id=""
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            >
+              <option value="">Select a Model</option>
+              <option value="toyota">Toyota</option>
+              <option value="">Yamaha</option>
+            </select>
+          </div>
+
+          <div class="form-group flex flex-col">
+            <label for="">Fuel Type </label>
+            <select
+              name=""
+              id=""
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            >
+              <option value="">All fuel type</option>
+
+              <option value="diesel">Diesel</option>
+              <option value="petrol">Petrol</option>
+            </select>
+          </div>
+
+          <div class="flex justify-end items-end">
+            <button
+              class="btn m-2 mr-4 mb-0 p-2 pr-6 pl-6 rounded bg-red-500 text-white"
+            >
+              Search
+            </button>
+          </div>
+        </form>
       </section>
+
+      <!--  -->
+
+      <footer
+        class="bg-gray-700 flex pt-20 justify-evenly items-center text-white flex-wrap"
+      >
+        <div class="contact p-4">
+          <h1 class="text-3xl mb-4">Contact</h1>
+          <h3 class="text-1xl">Head Office</h3>
+          <p class="mb-4">
+            Block 16, Tunga Locost Opposite Gidan Kwanu, Minna, Niger State
+          </p>
+
+          <h3 class="text-1xl">Branch Office</h3>
+          <p>Old Como, Along New Road, Lokoja, Kogi State</p>
+
+          <a href="tel:+2347012345678">07012345678</a>
+        </div>
+
+        <form action="" class="contact-form p-4">
+          <div class="form-group mb-4">
+            <input
+              type="text"
+              placeholder="Your name"
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+            />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            ></textarea>
+          </div>
+
+          <div class="form-group flex justify-end items-end">
+            <button class="p-2 pr-4 pl-4 mt-2 btn bg-red-500 text-white">
+              Submit
+            </button>
+          </div>
+        </form>
+      </footer>
     </div>
 
     <script src="./script.js"></script>
